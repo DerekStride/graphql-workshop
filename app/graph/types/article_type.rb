@@ -5,4 +5,9 @@ ArticleType = GraphQL::ObjectType.define do
   field :id, !types.ID
   field :title, !types.String
   field :content, !types.String
+
+  connection :comments do
+    type CommentType.connection_type
+    resolve -> (article, _, _) { article.comments }
+  end
 end
