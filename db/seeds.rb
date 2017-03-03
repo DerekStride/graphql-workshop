@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+article = Article.create!(title: 'GraphQL @ CUHacking', content: 'SQL for the web')
+article.comments.create!(content: 'Such Wow', author: 'anonymous')
+article.comments.create!(content: 'Much Amaze', author: 'ronald mcdonald')
+article.comments.create!(content: 'Boom.', author: 'jake')
+article.comments.create!(content: 'Same', author: 'anonymous')
