@@ -1,6 +1,6 @@
 # GraphQL
 
-If you want to build the app piece by piece clone the repo `git clone https://github.com/DerekStride/graphql-workshop.git` and reset to the base rails app with a standard blog app configured `git checkout 7e36fee -b workshop`.
+If you want to build the app piece by piece clone the repo `git clone https://github.com/DerekStride/graphql-workshop.git` and reset to the base rails app with a standard blog app configured `git checkout 13cacb5 -b workshop`.
 
 The application at that point has an Article and a Comment ActiveRecord models setup and a few changes in the routes and application config files. It also has some seed data to create some records for us to use.
 
