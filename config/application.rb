@@ -10,5 +10,6 @@ module Graphql
   class Application < Rails::Application
     config.autoload_paths << Rails.root.join('app', 'graph')
     config.autoload_paths << Rails.root.join('app', 'graph', 'types')
+    config.autoload_paths << Rails.root.join('app', 'graph', 'resolvers')
   end
 end

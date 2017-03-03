@@ -1,8 +1,8 @@
 CommentType = GraphQL::ObjectType.define do
   name 'Comment'
   description 'A Comment'
+  global_id_field :id
 
-  field :id, !types.ID
   field :author, !types.String
   field :content, !types.String
 

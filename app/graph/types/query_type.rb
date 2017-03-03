@@ -6,14 +6,14 @@ QueryType = GraphQL::ObjectType.define do
     type ArticleType
     argument :id, !types.ID
 
-    resolve -> (_, args, _) { Article.find(args[:id]) }
+    resolve ActiveRecordResolver
   end
 
   field :comment do
     type CommentType
     argument :id, !types.ID
 
-    resolve -> (_, args, _) { Comment.find(args[:id]) }
+    resolve ActiveRecordResolver
   end
 
   field :simple do
